@@ -26,7 +26,7 @@
   height: 100vh;
   max-width: 100rem;
   background: linear-gradient(90deg, rgb(10, 10, 10), transparent),
-    url("./images/pizza1.jpg") center/cover;
+    url("../images/pizza1.jpg") center/cover;
   border: none;
   overflow: hidden;
 }
@@ -222,7 +222,7 @@
   height: 100vh;
   z-index: 999;
   background-color: rgb(255, 199, 17);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   display: flex;
@@ -290,6 +290,10 @@
   cursor: pointer;
   color: rgb(20, 20, 20);
   background-color: rgb(255, 123, 0);
+}
+
+.order_button:focus {
+  outline: none;
 }
 
 .cross_image {
@@ -416,7 +420,7 @@
   max-width: 100rem;
   height: 80vh;
   background: linear-gradient(360deg, rgb(10, 10, 10), transparent),
-    url("./images/pizza3.jpg") center/ cover;
+    url("../images/pizza3.jpg") center/ cover;
   border: none;
   display: flex;
   flex-direction: column;
@@ -459,6 +463,10 @@
   background-color: rgb(245, 36, 36);
 }
 
+.DayPizza_button:focus {
+  outline: none;
+}
+
 .facebook,
 .instagram,
 .linkedin,
@@ -475,6 +483,8 @@
 .twitter:hover,
 .youtube:hover {
   cursor: pointer;
+  fill: rgb(122, 122, 122);
+  transition: all 0s;
 }
 
 .footer_pizza_text:hover {

@@ -9,7 +9,7 @@ const Desserts = () =>{
         <div className="desserts_menu_container">
             <div className="favourite_text">Sweets Treats For You</div>
             <div className="items">
-                <FoodCard image={dessert1} name={'Vanilla Rolls'} description={'Vanilla cream rolled with extra juicy berries'} price={11.99} />
+                <FoodCard image={dessert1} name={'Vanilla Rolls'} description={'finely rolled Vanilla balls with extra juicy berries'} price={11.99} />
                 <FoodCard image={dessert2} name={'Baked Heart'} description={'finely baked bread with juicy filled strawberry fruits'} price={9.99} />
                 <FoodCard image={dessert3} name={'Browny Bunch'} description={'Double fudge brownie topped with extra chocolate pieces'} price={9.99} />
             </div>
