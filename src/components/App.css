@@ -227,6 +227,8 @@
   right: 0;
   display: flex;
   flex-direction: column;
+  -webkit-animation: slide-in-right 0.3s ease-in-out both;
+  animation: slide-in-right 0.3s ease-in-out both;
 }
 
 @media (max-width: 450px) {
@@ -248,7 +250,7 @@
   height: 65%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 2rem;
   align-items: center;
 }
@@ -272,6 +274,7 @@
   height: 20%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .order_button {
@@ -283,13 +286,14 @@
   background-color: rgb(245, 36, 36);
   color: rgb(223, 222, 222);
   border-radius: 5px;
+  transition: all 0.1s ease-in-out;
   border: none;
 }
 
 .order_button:hover {
   cursor: pointer;
   color: rgb(20, 20, 20);
-  background-color: rgb(255, 123, 0);
+  background-color: rgb(252, 64, 64);
 }
 
 .order_button:focus {
@@ -554,5 +558,30 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
